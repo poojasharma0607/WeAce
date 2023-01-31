@@ -1,0 +1,55 @@
+<div id="demo">
+    <form #userlogin = "ngForm" (ngSubmit) = "onClickSubmit(userlogin.value)" >
+    <table>
+        <th><h1>Please share your feedback!!</h1></th>
+        <tr>
+            <td>Name:</td>
+            <td> <input type="text" name="name" ngModel></td>
+        </tr>
+        <tr>
+            <td>How are you feeling today?</td>
+            <td>Happy <input type="radio" name="daymood" value=1 ngModel> 
+                Sad <input type="radio" name="daymood" value=0 ngModel></td>
+        </tr>
+        <tr>
+            <td>Are you satisfied with your salary?</td>
+            <td>Satisfied <input type="checkbox" name="salary" value=2 ngModel>
+                Neutral <input type="checkbox" name="salary" value=1 ngModel>
+                Not satisfied <input type="checkbox" name="salary" value=0 ngModel></td>
+        </tr>
+        <tr>
+            <td>Do you feel that your manager cares about you and your work? </td>
+            <td><select name="care" ngModel>
+               
+                <option value=3>Yes Absolutely</option>
+                <option value=2>To some extent</option>
+                <option value=1>Sometimes</option>
+                <option value=0>Not at all</option>
+            </select></td>
+        </tr>
+        <tr>
+            <td>Do you feel inspired by your team to give your best at work?</td>
+            <td><select name="inspire" ngModel>
+            
+                <option value=3>Yes Absolutely</option>
+                <option value=2>To some extent</option>
+                <option value=1>Sometimes</option>
+                <option value=0>Not at all</option>
+            </select></td>
+        </tr>
+       
+        <tr>
+            <td> Do you get time to learn and develop new skills given your work schedule?</td>
+            <td>Yes Absolutely <input type="radio" name="learn" value=1 ngModel>
+                Not at all <input type="radio" name="learn" value=0 ngModel></td>
+        </tr>
+
+    </table>
+   
+    
+
+
+    <button type="submit"  id="submit">Submit</button>
+</form>
+   
+</div>
